@@ -1,8 +1,5 @@
-<html lang="en">
-    <body>
-        <div>
-            Hello!
-        </div>
-    </body>
-</html>
-<?php
+<?php require_once 'header.php'?>
+    <div id="camera-view">
+        CAM VIEW
+    </div>
+<?php require_once 'footer.php' ?>
