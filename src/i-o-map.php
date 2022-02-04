@@ -1,5 +1,10 @@
-<?php require_once 'header.php'?>
-    <div id="io-map">
-        IO MAP
+<?php
+$current = 'i-o-map';
+require_once 'header.php';
+?>
+    <div class ="content" id="i-o-map">
+        I/O MAP
     </div>
-<?php require_once 'footer.php' ?>
+<?php
+require_once 'footer.php'
+?>
