@@ -1,6 +1,6 @@
 # 🎮 WebRover SCADA 🎮
 
-A containerized version of [BFirsh's](https://github.com/bfirsh) React-based web UI for [JSNES](https://github.com/bfirsh/jsnes).
+A containerized SCADA for a rover.
 
 ## 📍 Getting Started
 TBT
