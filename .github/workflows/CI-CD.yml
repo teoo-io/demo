@@ -49,10 +49,10 @@ jobs:
           kubectl create ns ${{ secrets.APP_NAME }}-system || echo "Skipping..."
           
           sed -i'' -e 's/DOCKERHUB_USERNAME/${{ secrets.DOCKERHUB_USERNAME }}/g' -e 's/APP_NAME/${{ secrets.APP_NAME }}/g' -e 's/GIT_HASH/${{GITHUB.SHA}}/g' -e 's/DOMAIN/${{ secrets.DOMAIN }}/g' ./kubernetes/deployment.yml
-          kubectl apply -f deployment.yml
+          kubectl apply -f ./kubernetes/deployment.yml
           
           sed -i'' -e 's/APP_NAME/${{ secrets.APP_NAME }}/g' ./kubernetes/service.yml
-          kubectl apply -f service.yml
+          kubectl apply -f ./kubernetes/service.yml
           
           sed -i'' -e 's/APP_NAME/${{ secrets.APP_NAME }}/g' ./kubernetes/ingress.yml
-          kubectl apply -f ingress.yml
+          kubectl apply -f ./kubernetes/ingress.yml
