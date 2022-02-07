@@ -2,9 +2,11 @@
     $current = 'index';
     require_once 'header.php';
 ?>
-    <div class ="content" id="camera-view">
-        CAM VIEW
-    </div>
+   <div class ="content">
+       <?php
+            require_once 'cam-view.php'
+       ?>
+   </div>
 <?php
     require_once 'footer.php'
 ?>
