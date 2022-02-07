@@ -2,6 +2,8 @@
 
 A containerized SCADA for a rover.
 
+[Visit the live demo](https://scada.teoo.io)
+
 ## 📍 Getting Started
 TBT
 
