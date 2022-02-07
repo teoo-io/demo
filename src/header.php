@@ -6,8 +6,13 @@
         <script src="https://kit.fontawesome.com/9a7cc6e46e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="nav">
-            <i class="fas fa-user-circle" id="user-icon"></i>
-            <h1>WebRover</h1>
-        </div>
-    <?php require_once 'nav.php'; ?>
+        <div id="page-container">
+            <div class="nav">
+                <i class="fas fa-user-circle" id="user-icon"></i>
+                <div id="logo-header">
+                    <img id="logo" src="img/logo.png">
+                    <h1>WebRover</h1>
+                </div>
+
+            </div>
+            <?php require_once 'nav.php'; ?>

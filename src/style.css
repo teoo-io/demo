@@ -16,31 +16,50 @@ body {
     color: #000000;
     font-size: 24px;
     padding: 5px;
-    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
 }
 
 .nav {
     margin: 0 0;
+    height: fit-content;
     background-color: var(--gray-light);
+    position: relative;
 }
 
-.nav > h1 {
-    text-align: center;
-    margin: 0 0;
-    font-size: 28px;
+#logo-header {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#logo {
+    display: inline;
+    margin-top: 2px;
+    width: 24px;
+}
+
+.nav > div > h1 {
+    display: inline;
+    font-size: 24px;
 }
 
 #user-icon {
+    display: inline-block;
     float: right;
+    margin: 0;
 }
 
 #left-div {
     float: left;
     width: fit-content;
-    height: fit-content;
 }
 
-.nav > ul > a > li > .fas:hover {
+.nav > ul > a > li:hover {
     color: var(--gray-dark);
     background-color: var(--gray-highlight);
 }
@@ -54,14 +73,13 @@ body {
     margin: 0;
 }
 
-
 .nav > ul > li {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 .content {
+    padding-bottom: 3.5rem;
 }
 
 #camera-view {
@@ -77,6 +95,10 @@ body {
 }
 
 #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;
     text-align: center;
 }
 
@@ -88,5 +110,3 @@ body {
     text-decoration: none;
     color: var(--blue);
 }
-
-
