@@ -1,23 +1,27 @@
 <div class="nav" id="left-div">
     <ul>
         <a href="index.php" class="nav-anchor">
-            <li <?php if ($current == 'index') { echo "id='current_page'"; } ?>>
-                <i class="fas fa-gamepad"></i>
+            <li >
+                <i class="fas fa-truck-pickup"<?php if ($current == 'index') { echo "id='current_page'"; } ?>></i>
             </li>
         </a>
-        <a href="drive.php" class="nav-anchor">
-            <li <?php if ($current == 'drive') { echo "id='current_page'"; } ?>>
-                <i class="fas fa-truck-pickup"></i>
+        <a href="clinometer.php" class="nav-anchor">
+            <li >
+                <i class="fas fa-car-crash"<?php if ($current == 'clinometer') { echo "id='current_page'"; } ?>></i>            </li>
+        </a>
+        <a href="cam-view.php" class="nav-anchor">
+            <li >
+                <i class="fas fa-video"<?php if ($current == 'cam-view') { echo "id='current_page'"; } ?>></i>
             </li>
         </a>
-        <a href="i-o-map.php" class="nav-anchor">
-            <li <?php if ($current == 'i-o-map') { echo "id='current_page'"; } ?>>
-                <i class="fas fa-project-diagram"></i>
+        <a href="lights.php" class="nav-anchor">
+            <li >
+                <i class="fas fa-lightbulb"<?php if ($current == 'lights') { echo "id='current_page'"; } ?>></i>
             </li>
         </a>
-        <a href="scripts.php" class="nav-anchor">
-            <li <?php if ($current == 'scripts') { echo "id='current_page'"; } ?>>
-                <i class="fas fa-code"></i>
+        <a href="settings.php" class="nav-anchor">
+            <li >
+                <i class="fas fa-wrench"<?php if ($current == 'settings') { echo "id='current_page'"; } ?>></i>
             </li>
         </a>
     </ul>

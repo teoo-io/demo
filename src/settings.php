@@ -1,9 +1,9 @@
 <?php
-$current = 'i-o-map';
+$current = 'settings';
 require_once 'header.php';
 ?>
-    <div class ="content" id="i-o-map">
-        I/O MAP
+    <div class ="content" id="settings">
+        SETTINGS
     </div>
 <?php
 require_once 'footer.php'

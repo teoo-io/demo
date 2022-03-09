@@ -2,7 +2,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
-        <title>WebRover - SCADA</title>
+        <title>R2 Wheeling</title>
         <script src="https://kit.fontawesome.com/9a7cc6e46e.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -11,7 +11,7 @@
                 <i class="fas fa-user-circle" id="user-icon"></i>
                 <div id="logo-header">
                     <img id="logo" src="img/logo.png">
-                    <h1>WebRover</h1>
+                    <h1>R2Wheeling</h1>
                 </div>
 
             </div>
