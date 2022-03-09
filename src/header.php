@@ -10,7 +10,7 @@
             <div class="nav">
                 <i class="fas fa-user-circle" id="user-icon"></i>
                 <div id="logo-header">
-                    <img id="logo" src="img/logo.png">
+
                     <h1>R2Wheeling</h1>
                 </div>
 
