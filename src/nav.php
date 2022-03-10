@@ -7,7 +7,7 @@
         </a>
         <a href="clinometer.php" class="nav-anchor">
             <li >
-                <i class="fas fa-car-crash"<?php if ($current == 'clinometer') { echo "id='current_page'"; } ?>></i>            </li>
+                <i class="fas fa-mountain"<?php if ($current == 'clinometer') { echo "id='current_page'"; } ?>></i>            </li>
         </a>
         <a href="cam-view.php" class="nav-anchor">
             <li >
