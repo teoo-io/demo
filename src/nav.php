@@ -10,11 +10,13 @@
         <?php
         require_once 'dao.php';
         $dao = new DAO();
-        $applications = $dao->getApplicationsInstalled();
+        $applications = $dao->getApplications();
         foreach ($applications as $application){
-            echo "<a href='{$application['app_directory']}' class='nav-anchor'><li> <i class='{$application['app_logo']}'";
-                    if ($current == $application['app_name']) { echo "id='current_page'"; } else { echo "id='nav'"; }
-            echo "></i></li> </a>";
+            if($application['app_enabled']){
+                echo "<a href='{$application['app_directory']}' class='nav-anchor'><li> <i class='{$application['app_logo']}'";
+                if ($current == $application['app_name']) { echo "id='current_page'"; } else { echo "id='nav'"; }
+                echo "></i></li> </a>";
+            }
         }
         ?>
 
