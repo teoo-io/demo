@@ -16,8 +16,8 @@ DROP TABLE IF EXISTS comment;
 CREATE TABLE comment (
                          id INT AUTO_INCREMENT PRIMARY KEY,
                          user_email VARCHAR(256),
-                         timedate TIMESTAMP,
-                         content CHAR(200),
+                         comment_timedate TIMESTAMP,
+                         comment_content CHAR(200),
                          FOREIGN KEY(user_email)
                              REFERENCES user(email)
 );
@@ -35,15 +35,28 @@ CREATE TABLE user_comment (
 DROP TABLE IF EXISTS application_available;
 
 CREATE TABLE application_available (
-                                       id INT AUTO_INCREMENT PRIMARY KEY,
-                                       name VARCHAR(64) NOT NULL,
-                                       logo VARCHAR(256)
+                                       app_id INT AUTO_INCREMENT PRIMARY KEY,
+                                       app_name VARCHAR(64) NOT NULL,
+                                       app_title VARCHAR(64) NOT NULL,
+                                       app_logo VARCHAR(256) DEFAULT 'fas fa-truck-pickup',
+                                       app_directory VARCHAR(256) DEFAULT 'index.php'
 );
 
 DROP TABLE IF EXISTS application_installed;
 
 CREATE TABLE application_installed (
-                                       id INT AUTO_INCREMENT PRIMARY KEY,
-                                       name VARCHAR(64) NOT NULL,
-                                       logo VARCHAR(256)
+                                       app_id INT AUTO_INCREMENT PRIMARY KEY,
+                                       app_name VARCHAR(64) NOT NULL,
+                                       app_title VARCHAR(64) NOT NULL,
+                                       app_logo VARCHAR(256) DEFAULT 'fas fa-truck-pickup',
+                                       app_directory VARCHAR(256) DEFAULT 'index.php'
 );
+
+INSERT INTO application_available (app_name,app_title,app_logo,app_directory) values('clinometer','Clinometer','fas fa-mountain','clinometer.php');
+INSERT INTO application_available (app_name,app_title,app_logo,app_directory) values('cam-view','Camera Views','fas fa-video','cam-view.php');
+INSERT INTO application_available (app_name,app_title,app_logo,app_directory) values('lights','External Lights','fas fa-lightbulb','lights.php');
+
+INSERT INTO application_installed (app_name,app_title,app_logo,app_directory) values('clinometer','Clinometer','fas fa-mountain','clinometer.php');
+
+SELECT * FROM application_available;
+SELECT * FROM application_installed;
