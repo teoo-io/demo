@@ -27,7 +27,7 @@ jobs:
       - name: Build Docker Image
         # kubectl apply -f issuer-config.yml
         run: |
-          sed -i'' -e 's/USER/${{secrets.DB_USER}}/g' -e 's/PASSWORD/${{secrets.DB_PASS}}/g'  -e 's/DSN/${{secrets.DSN}}/g' src/dao.php
+          sed -i'' -e 's/USER/${{ secrets.DB_USER }}/g' -e 's/PASSWORD/${{ secrets.DB_PASS }}/g'  -e 's/DSN/${{ secrets.DSN }}/g' src/dao.php
           docker build --tag  ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.APP_NAME }}:${{GITHUB.SHA}} .
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.APP_NAME }}:${{GITHUB.SHA}}
   deploy-to-k3s:
